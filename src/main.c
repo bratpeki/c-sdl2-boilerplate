@@ -1,4 +1,8 @@
 
+/*
+ * main.c - The main C execution source file
+ */
+
 #include "./include/event.h"
 #include "./include/win.h"
 

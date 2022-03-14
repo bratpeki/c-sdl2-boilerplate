@@ -1,4 +1,10 @@
 
+/*
+ * win.c - Handle graphical processes
+ *
+ * Header: win.h
+ */
+
 #include "./include/win.h"
 
 #include <SDL2/SDL.h>

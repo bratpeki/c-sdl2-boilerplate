@@ -1,4 +1,10 @@
 
+/*
+ * event.c - Handle events
+ *
+ * Header: event.h
+ */
+
 #include <SDL2/SDL.h>
 
 SDL_Event event;
