@@ -55,9 +55,38 @@ else {
 	winQuit();
 
 	return EXIT_SUCCESS;
+}
 ```
 
 Firstly, the program checks if it can initialize `SDL`.
 Initializing it means creating a window (640x640) and a renderer.
 Then, as long as the program is running, wait for an input and update the display once there is any.
+
+So, the diagram of `main` would be similar to the following:
+
+```
+winInit --> was is successful? ---> EXIT_FAILURE;
+                               no
+            |
+            | yes
+            |
+            v
+
+            winRender <----
+                           \
+            |               |
+            |               |
+            |               |
+            v               | no
+
+            eventHandle --> event = exit ?
+
+                            |
+                            | yes
+                            |
+                            v
+
+                            EXIT_SUCCESS;
+```
+
 
