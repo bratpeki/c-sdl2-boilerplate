@@ -20,8 +20,8 @@ int main(int argc, char* argv[]) {
 
 		while (stateRunning) {
 
-			eventHandle();
 			winRender();
+			eventHandle();
 
 		}
 
