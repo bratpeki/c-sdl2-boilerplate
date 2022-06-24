@@ -13,22 +13,21 @@ extern SDL_bool stateRunning;
 
 void eventHandle() {
 
-	if (SDL_WaitEvent(&event) != SDL_FALSE) {
+	SDL_WaitEvent(&event);
 
-		switch (event.type) {
+	switch (event.type) {
 
-			case SDL_QUIT: stateRunning = SDL_FALSE; break;
+		case SDL_QUIT: stateRunning = SDL_FALSE; break;
 
-			case SDL_KEYDOWN:
-			switch (event.key.keysym.sym) {
+		case SDL_KEYDOWN:
+		switch (event.key.keysym.sym) {
 
-				case SDLK_ESCAPE: stateRunning = SDL_FALSE; break;
-
-			}
+			case SDLK_ESCAPE: stateRunning = SDL_FALSE; break;
 
 		}
 
 	}
+
 
 }
 
