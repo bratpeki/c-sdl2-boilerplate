@@ -11,8 +11,8 @@
 #include <SDL2/SDL_render.h>
 #include <SDL2/SDL_video.h>
 
-SDL_Renderer* renMain;
-SDL_Window*   winMain;
+SDL_Renderer *renMain;
+SDL_Window   *winMain;
 
 int winInit() {
 
