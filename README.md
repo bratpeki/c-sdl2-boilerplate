@@ -19,14 +19,14 @@
 
 ### File description
 
-| File     | Use                         |
-| -------- | --------------------------- |
-| Makefile | Premade `Makefile`          |
-| event.c  | Event handler               |
-| event.h  | Function header for event.c |
-| main.c   | Main execution file         |
-| win.c    | Renderer                    |
-| win.h    | Function header from win.c  |
+| File       | Use                           |
+| ---------- | ----------------------------- |
+| `Makefile` | Premade `Makefile`            |
+| `event.c`  | Event handler                 |
+| `event.h`  | Function header for `event.c` |
+| `main.c`   | Main execution file           |
+| `win.c`    | Renderer                      |
+| `win.h`    | Function header from `win.c`  |
 
 ### Makefile presets
 
@@ -58,7 +58,7 @@ else {
 }
 ```
 
-Firstly, the program checks if it can initialize `SDL`.
+Firstly, the program checks if it can initialize `SDL2`.
 Initializing it means creating a window (640x640) and a renderer.
 Then, as long as the program is running, wait for an input and update the display once there is any.
 
@@ -88,5 +88,4 @@ winInit --> was is successful? ---> EXIT_FAILURE;
 
                             EXIT_SUCCESS;
 ```
-
 
