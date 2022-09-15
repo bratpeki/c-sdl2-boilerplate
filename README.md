@@ -25,7 +25,7 @@
 | `event.c`  | Event handler                 |
 | `event.h`  | Function header for `event.c` |
 | `main.c`   | Main execution file           |
-| `win.c`    | Renderer                      |
+| `win.c`    | Window related functionality  |
 | `win.h`    | Function header from `win.c`  |
 
 ### Makefile presets
@@ -59,7 +59,7 @@ else {
 ```
 
 Firstly, the program checks if it can initialize `SDL2`.
-Initializing it means creating a window (640x640) and a renderer.
+Initializing means creating a window (640x640) and a renderer.
 Then, as long as the program is running, wait for an input and update the display once there is any.
 
 So, the diagram of `main` would be similar to the following:
