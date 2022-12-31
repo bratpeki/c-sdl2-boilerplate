@@ -13,7 +13,7 @@
 
 SDL_bool stateRunning = SDL_TRUE;
 
-int main(int argc, char* argv[]) {
+int main( /* int argc, char* argv[] */ ) {
 
 	if ( winInit() ) return EXIT_FAILURE;
 	else {

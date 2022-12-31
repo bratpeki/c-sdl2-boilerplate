@@ -88,4 +88,3 @@ winInit --> was is successful? ---> EXIT_FAILURE;
 
                             EXIT_SUCCESS;
 ```
-
