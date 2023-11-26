@@ -35,7 +35,7 @@
 | `build`  | Build the output binary `main.out`                         |
 | `clean`  | Remove the output binary `main.out`                        |
 | `dbuild` | Same as `build`, but with added flags for debugging (`-g`) |
-| `exec`   | Executre the output binary `main.out`                      |
+| `exec`   | Execute the output binary `main.out`                       |
 
 ### int main()
 
